@@ -104,9 +104,13 @@ void vendor_load_properties() {
     if (strstr(rf_version, "11") || strstr(rf_version, "31")) {
         /* Chinese/America*/
         property_set("ro.product.model", "ONEPLUS A3000");
+        property_set("telephony.lteOnCdmaDevice", "1,1");
+        property_set("ro.telephony.default_network", "22,22");
+        property_set("ro.telephony.default_cdma_sub", "0");
     } else if (strstr(rf_version, "21")) {
         /* Asia/Europe */
         property_set("ro.product.model", "ONEPLUS A3003");
+        property_set("ro.telephony.default_network", "9,9");
     }
 
     init_alarm_boot_properties();
