@@ -1,5 +1,11 @@
 For OTA Updates:
 
+RR/.repo/local_manifests/roomservice.xml
+==> add the following line to your xml-file:
+
+<project name="MatthewBooth/OTAUpdates" path="packages/apps/OTAUpdates" remote="github" revision="aosp" />
+
+
 RR/vendor/cm/config/common.mk (important)
 ==> remove ResurrectionOTA, add OTAUpdates in Custom CM packages
 
