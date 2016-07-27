@@ -1,0 +1,20 @@
+For OTA Updates:
+
+RR/vendor/cm/config/common.mk (important)
+==> remove ResurrectionOTA, add OTAUpdates in Custom CM packages
+
+
+RR/device/oneplus/oneplus3/system.prop (updates needed)
+==> always update the following updates as soon as a new build is pushed to public:
+
+ro.ota.romname=ResurrectionRemix-v5.7.1-official ==> update version number
+ro.ota.version=20160727 ==> update build date
+ro.ota.manifest=https://raw.githubusercontent.com/sunsettrack4/rr-ota/master/op3.xml ==> changes may apply when we start to provide delta ota
+
+
+RR/packages/apps/Settings/res/xml/rr_main_settings.xml (see commit)
+==> open new ota updates app instead of RR OTA in Settings/Configurations/Updates
+
+
+Our current file for upcoming ota updates (delta updates excluded):
+https://github.com/sunsettrack4/rr-ota/op3.xml
