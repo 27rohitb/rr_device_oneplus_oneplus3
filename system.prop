@@ -131,8 +131,3 @@ persist.timed.enable=true
 
 # Wifi
 wifi.interface=wlan0
-
-# OTA UPDATES
-ro.ota.romname=ResurrectionRemix-v5.7.1-official
-ro.ota.version=20160727
-ro.ota.manifest=https://raw.githubusercontent.com/sunsettrack4/rr-ota/master/op3.xml
