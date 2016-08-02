@@ -438,4 +438,7 @@
     <!-- Make things go fast -->
     <bool name="config_ui_enableFadingMarquee">false</bool>
 
+    <!-- Enable blur support -->
+    <bool name="config_ui_blur_enabled">true</bool>
+
 </resources>
