@@ -405,9 +405,9 @@
     <string name="config_networkLocationProviderPackageName" translatable="false">com.qualcomm.location</string>
     <string name="config_fusedLocationProviderPackageName" translatable="false">com.qualcomm.location</string>
 
+    <!-- Enable HW button light control -->
     <bool name="config_hwKeysPref">true</bool> 
-
-		
+	
     <!-- Button illumination -->		
     <bool name="config_deviceHasVariableButtonBrightness">true</bool>
 
@@ -438,4 +438,6 @@
     <!-- Make things go fast -->
     <bool name="config_ui_enableFadingMarquee">false</bool>
 
+    <!-- Enable blur support -->
+    <bool name="config_ui_blur_enabled">true</bool>
 </resources>
